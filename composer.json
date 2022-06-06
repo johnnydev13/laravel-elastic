@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
-        "elasticsearch/elasticsearch": "^8.2",
+        "elasticsearch/elasticsearch": "^7.6",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.11",
         "laravel/sanctum": "^2.14.1",
@@ -28,6 +28,9 @@
         }
     },
     "autoload-dev": {
+        "files": [
+            "app/Helpers/functions/pagination.php"
+        ],
         "psr-4": {
             "Tests\\": "tests/"
         }
